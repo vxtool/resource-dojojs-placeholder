@@ -13,4 +13,5 @@ require([
     if( atributo in document.createElement( elemento ) ) return true;
   };
 
+  if( !verificaSuporteHtml5('input', 'valor_placeholder') ) placeholderCont( '.inp_text' );
 });
