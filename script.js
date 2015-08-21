@@ -7,6 +7,13 @@ require([
   'dojo/domReady!'
 ], function( domAttr, query, array, on, domStyle ){
 
+  /**
+   * @method placeholderCont
+   * Executa a função de placeholder alternativo para navegadores antigos
+   *
+   * @param {elemento} String com a identificação do elemento
+   *     
+  */
   function placeholderCont( elemento ){
 
     query( elemento ).forEach(function( node, index, arr ){
