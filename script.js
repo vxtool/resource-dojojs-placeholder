@@ -34,13 +34,15 @@ require([
         */
         valor_input = domAttr.get( node, 'value' );
         
+      // sendo o 'value' do elemento vazio, o mesmo recebe o valor do 'placeholder' e a cor cinza para escrita
       if( valor_input === "" ){
         domAttr.set( node, 'value', valor_placeholder );
         domStyle.set( node, 'color', '#ccc' );
-      } else if( valor_input === valor_placeholder){
+      } else if( valor_input === valor_placeholder){ //caso tenha refresh na pagina sem acionar os inputs
           domStyle.set( node, 'color', '#ccc' );
       }
 
+      // o valor do 'placeholder' sendo igual ao do 'value', o 'value' recebe vazio e a cor original de escrita
       on( node , 'focus', function() {
         valor_placeholder = domAttr.get( this, 'placeholder');
         
@@ -50,6 +52,7 @@ require([
         }
       });
 
+      // o valor do 'value' sendo igual a vazio, o 'value' recebe o valor do 'placeholder' e a cor cinza para escrita
       on( node, 'blur', function() {
         valor_placeholder = domAttr.get( this, 'placeholder' );
         
