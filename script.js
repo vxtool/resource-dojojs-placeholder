@@ -18,8 +18,20 @@ require([
 
     query( elemento ).forEach(function( node, index, arr ){
       var
+        /**
+         * @property {string} (RGB)
+         * Propriedade com a cor original do elemento
+        */
         cor_elemento = domStyle.get( node, 'color' ),
+        /**
+         * @property {string}
+         * Propriedade com o valor do atributo 'placeholder' do elemento
+        */
         valor_placeholder = domAttr.get( node, 'placeholder' ),
+        /**
+         * @property {string}
+         * Propriedade com o valor do atributo 'value' do elemento
+        */
         valor_input = domAttr.get( node, 'value' );
         
       if( valor_input === "" ){
