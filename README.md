@@ -1,9 +1,10 @@
 # Placeholder alternativo para navegadores antigos
 
 [![licence mit](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](http://hemersonvianna.mit-license.org/)
-[![issues](https://img.shields.io/github/issues/resource-solutions/resource-dojojs-placeholder.svg?style=flat-square)](https://github.com/resource-solutions/resource-dojojs-placeholder/issues)
+[![issues](https://img.shields.io/github/issues/descco-tools/resource-dojojs-placeholder.svg?style=flat-square)](https://github.com/descco-tools/resource-dojojs-placeholder/issues)
 
-**Composta por 2 métodos:**<br>
+**Composta por 2 métodos:**
+
 - onde é verificado o suporte a atributos do html5
 - e caso exista um atributo placeholder no elemento informado e o navegador não seja capaz de renderizar, o valor do mesmo é aplicado no seu atributo **value** .
 
@@ -18,7 +19,7 @@
 
 ## Log
 
-Check [Releases](https://github.com/resource-solutions/resource-dojojs-placeholder/releases) for detailed changelog.
+Check [Releases](https://github.com/descco-tools/resource-dojojs-placeholder/releases) for detailed changelog.
 
 ## License
 
